@@ -1,0 +1,46 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[lfs]
+	url = http://devcenter.bj.sensetime.com/api/v1/lfs/
+[credential]
+	helper = store
+[user]
+	name = yangfengting
+	email = yangfengting@sensetime.com
+[url "git@gitlab.bj.sensetime.com:"]
+	insteadOf = http://gitlab.bj.sensetime.com/
+        insteadOf = https://gitlab.bj.sensetime.com/
+[url "git@gitlab.sz.sensetime.com:"]
+	insteadOf = http://gitlab.sz.sensetime.com/
+	insteadOf = https://gitlab.sz.sensetime.com/
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[core]
+	autocrlf = input
+
+[alias]
+        a   = add .
+        b   = branch
+        cl  = clone
+        ci  = commit
+        cm  = commit -m
+        co  = checkout
+        d   = diff
+        ds  = describe
+        dst = describe --tags
+        f   = fetch
+        h   = help
+        i   = init
+        l   = log
+        m   = merge
+        pl  = pull
+        ps  = push
+        rb  = rebase
+        rs  = reset
+        rt  = remote
+        s   = status
+        sh  = show
+        t   = tag
