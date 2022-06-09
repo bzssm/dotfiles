@@ -141,10 +141,6 @@ export PATH=/Users/yangfengting/anaconda3/bin:$PATH
 # Enable git prompt
 GIT_TERMINAL_PROMPT=1
 
-# Viper/Mercury go directory
-alias m="cd ~/go/src/gitlab.bj.sensetime.com/mercury"
-alias v="cd ~/go/src/gitlab.sz.sensetime.com/viper"
-
 # tmp dir alias
 alias t="cd /tmp && open /tmp"
 # ssh to port 2222 alias
@@ -174,11 +170,6 @@ alias gh="gcode hk-jump"
 # for kubebuilder
 alias kb="kubebuilder"
 
-# devcenter secret copy
-alias dsc="echo 563629a102f74fd8 | pbcopy"
-# gerrit secret copy
-alias gsc="echo 'rZdnx4/tWybSl8zVYaIPUsUoQIHhxgo8zZgmLsV6XA' | pbcopy "
-
 # gomod environment for goland
 alias ge="echo 'GOPROXY=https://proxy.golang.com.cn,direct;GOPRIVATE=*.bj.sensetime.com,*.sz.sensetime.com' | pbcopy"
 
@@ -187,11 +178,6 @@ alias ta="tmux attach -t"
 alias ts="tmux ls"
 alias tn="tmux new -s"
 
-# jump to jcv
-alias jqa="ssh ubuntu@8.211.161.81"
-# jump to aws staging
-alias jaws='docker exec -it jump ssh -o "ProxyCommand=ncat -i 3600s --proxy 10.54.0.33:3128 %h %p" ubuntu@34.220.168.32'
-
 alias pgit='https_proxy=http://10.54.0.33:3128 git'
 # disable brew update. It has been done via crontab
 export HOMEBREW_NO_AUTO_UPDATE=1
@@ -199,7 +185,4 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # set for bat
 export BAT_THEME='Solarized (dark)'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-alias ib1='ssh ubuntu@ib-test-1.eastus.cloudapp.azure.com'
-alias ib2='ssh ubuntu@ib-test-2.eastus.cloudapp.azure.com'
 

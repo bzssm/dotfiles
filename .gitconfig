@@ -3,19 +3,8 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[lfs]
-	url = http://devcenter.bj.sensetime.com/api/v1/lfs/
 [credential]
 	helper = store
-[user]
-	name = yangfengting
-	email = yangfengting@sensetime.com
-[url "git@gitlab.bj.sensetime.com:"]
-	insteadOf = http://gitlab.bj.sensetime.com/
-        insteadOf = https://gitlab.bj.sensetime.com/
-[url "git@gitlab.sz.sensetime.com:"]
-	insteadOf = http://gitlab.sz.sensetime.com/
-	insteadOf = https://gitlab.sz.sensetime.com/
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [core]
